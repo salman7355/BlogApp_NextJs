@@ -1,0 +1,26 @@
+.image1{
+    background: url("/illustration.png");
+    background-size: cover;
+}
+.image2{
+    background:url("/website.jpg");
+    background-size: cover;
+}
+.image3{
+    background: url("/apps.jpg");
+    background-size: cover;
+}
+
+.item:nth-child(2n+1){
+    flex-direction: row-reverse;
+}
+
+@media (max-width: 729px) {
+    .item{
+        flex-direction: column;
+    }
+
+    .item:nth-child(2n+1){
+        flex-direction: column;
+    }
+}
